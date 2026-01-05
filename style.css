@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+.header {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.detail {
+  max-width: 600px;
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.detail ul {
+  padding-left: 20px;
+}
+
+.detail li {
+  margin-bottom: 8px;
+}
+
+.btn-wa {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  background: #25D366;
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
