@@ -3,48 +3,228 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exclusive Platinum Package | VD Fotografi</title>
+<title>Exclusive Platinum Package | VD Photo Studio</title>
+
 <style>
-body{margin:0;font-family:Segoe UI,Arial;background:#f4f6f8;color:#333;line-height:1.6;}
-header{background:linear-gradient(135deg,#6b0000,#b80000);color:#fff;text-align:center;padding:28px;}
-.container{padding:18px;max-width:900px;margin:auto;}
-ul{padding-left:18px;}
-.price{margin-top:18px;font-size:22px;font-weight:bold;color:#b30000;}
-.wa{display:block;margin-top:22px;background:#25d366;color:#fff;text-align:center;
-padding:15px;border-radius:12px;text-decoration:none;font-weight:bold;}
-.back{display:block;text-align:center;margin-top:18px;color:#555;text-decoration:none;}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-top:12px;}
-.gallery img{width:100%;height:150px;object-fit:cover;border-radius:10px;}
+body{
+  margin:0;
+  font-family:"Segoe UI", Arial, sans-serif;
+  background:#f4f6f8;
+  color:#333;
+  line-height:1.7;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,#444,#999);
+  color:#fff;
+  text-align:center;
+  padding:32px 16px;
+}
+
+header h1{
+  margin:0;
+  font-size:26px;
+  letter-spacing:1px;
+}
+
+header p{
+  margin-top:6px;
+  font-size:14px;
+  opacity:.9;
+}
+
+/* CONTAINER */
+.container{
+  max-width:950px;
+  margin:auto;
+  padding:20px;
+  background:#fff;
+}
+
+/* SECTION */
+.section{
+  margin-bottom:22px;
+}
+
+.section h2{
+  margin-bottom:10px;
+  color:#555;
+  font-size:18px;
+}
+
+ul{
+  padding-left:18px;
+}
+
+ul li{
+  margin-bottom:6px;
+}
+
+/* NOTE */
+.note{
+  font-size:14px;
+  color:#555;
+}
+
+/* PRICE */
+.price{
+  margin-top:20px;
+  font-size:24px;
+  font-weight:bold;
+  color:#b30000;
+  text-align:center;
+}
+
+/* WARNING */
+.warning{
+  margin-top:10px;
+  font-size:14px;
+  color:#444;
+  text-align:center;
+}
+
+/* BUTTON */
+.wa{
+  display:block;
+  margin-top:26px;
+  background:#25d366;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:15px;
+}
+
+.wa:hover{
+  background:#1ebe5d;
+}
+
+.back{
+  display:block;
+  text-align:center;
+  margin-top:18px;
+  color:#555;
+  text-decoration:none;
+  font-size:14px;
+}
+
+/* GALLERY */
+.gallery-title{
+  margin-top:30px;
+  font-size:18px;
+  font-weight:bold;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:12px;
+  margin-top:12px;
+}
+
+.gallery img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:10px;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.gallery img:hover{
+  transform:scale(1.05);
+  box-shadow:0 6px 14px rgba(0,0,0,.15);
+}
+
+/* RESPONSIVE */
+@media(max-width:480px){
+  header h1{font-size:22px;}
+  .price{font-size:20px;}
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<h1>Exclusive Platinum Package</h1>
-<p>Wedding Package – VD Fotografi</p>
+  <h1>EXCLUSIVE PLATINUM PACKAGE</h1>
+  <p>Wedding Package – VD Photo Studio</p>
 </header>
 
 <div class="container">
-<ul>
-<li>1 Fotografer + 1 Assistant</li>
-<li>Album hardcover + box magazine</li>
-<li>Album magnetic jumbo</li>
-<li>1x cetak 16R + frame</li>
-<li>Dokumentasi full acara</li>
-</ul>
+
+<!-- PERSONIL -->
+<div class="section">
+  <ul>
+    <li><b>1 Fotografer</b></li>
+    <li><b>1 Assistant Fotografer</b></li>
+  </ul>
+</div>
+
+<!-- INCLUDE -->
+<div class="section">
+  <h2>Include</h2>
+  <ul>
+    <li>1 Album hardcover untuk pengantin</li>
+    <li>Box exclusive magazine</li>
+    <li>1 Album magnetic jumbo</li>
+    <li>Box standar magnetic</li>
+    <li>1x pembesaran cetak 16R + frame</li>
+  </ul>
+</div>
+
+<!-- KETERANGAN -->
+<div class="section note">
+  <p>
+    Semua paket sudah termasuk dokumentasi mulai dari 
+    <b>make up sampai dengan selesai.</b>
+  </p>
+
+  <p>
+    Estimasi waktu <b>editing dan finishing</b> selama 
+    <b>1–2 bulan</b> dari hari pemotretan.
+  </p>
+
+  <p>
+    <b>DP 50%</b> untuk tanda jadi.  
+    Pelunasan setelah foto selesai.
+  </p>
+</div>
+
+<!-- PRICE -->
+<div class="price">
+  Rp 4.000.000
+</div>
+
+<div class="warning">
+  Apabila ada penambahan hari dikenakan biaya  
+  <b>Rp 1.000.000 / hari</b><br>
+  <b>Belum termasuk transportasi jika di luar kota</b>
+</div>
+
+<!-- GALLERY -->
+<div class="gallery-title">📸 Sample Foto Wedding</div>
 
 <div class="gallery">
-<img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800">
-<img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?q=80&w=800">
-<img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=800">
-<img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=800">
+  <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=600" onclick="window.open(this.src)">
+  <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=600" onclick="window.open(this.src)">
+  <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?q=80&w=600" onclick="window.open(this.src)">
+  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600" onclick="window.open(this.src)">
+  <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=600" onclick="window.open(this.src)">
 </div>
 
-<p class="price">Rp 4.000.000</p>
-
-<a class="wa" href="https://wa.me/6282130784822?text=Halo,%20booking%20Exclusive%20Platinum%20Package">
+<!-- BUTTON -->
+<a class="wa" 
+href="https://wa.me/6282130784822?text=Halo%20VD%20Photo%20Studio,%20saya%20ingin%20booking%20Exclusive%20Platinum%20Package">
 📲 Booking via WhatsApp
 </a>
-<a class="back" href="index.html">← Kembali</a>
+
+<a class="back" href="index.html">← Kembali ke katalog</a>
+
 </div>
+
 </body>
 </html>
