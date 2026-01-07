@@ -1,112 +1,129 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wedding & Prewedding | VD Fotografi</title>
-
-<style>
+/* ===== GLOBAL ===== */
 body{
   margin:0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   background:#f4f6f8;
   color:#333;
+  line-height:1.6;
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 header{
-  padding:26px 16px;
-  text-align:center;
-  background:linear-gradient(135deg,#8b0000,#c40000);
+  background:linear-gradient(135deg,#7b0000,#c40000);
   color:#fff;
+  text-align:center;
+  padding:28px 16px;
 }
 
-header h1{
+header h1,
+header h2{
   margin:0;
-  font-size:28px;
+  font-size:26px;
   letter-spacing:1px;
 }
 
 header p{
-  margin:6px 0 0;
-  font-size:14px;
-  opacity:.9;
-}
-
-/* GRID */
-.container{
-  padding:16px;
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:14px;
-}
-
-/* CARD */
-.card{
-  background:#fff;
-  border-radius:12px;
-  overflow:hidden;
-  box-shadow:0 6px 14px rgba(0,0,0,.08);
-  transition:.25s;
-}
-
-.card:hover{
-  transform:translateY(-3px);
-  box-shadow:0 10px 22px rgba(0,0,0,.12);
-}
-
-.card a{
-  text-decoration:none;
-  color:inherit;
-  display:block;
-  padding:16px;
-}
-
-.card h3{
-  margin:0;
-  font-size:14px;
-  font-weight:700;
-  line-height:1.4;
-}
-
-.tag{
   margin-top:6px;
-  font-size:12px;
-  color:#888;
+  font-size:14px;
+  opacity:0.9;
 }
 
-/* RESPONSIVE */
-@media(max-width:360px){
-  .container{ grid-template-columns:1fr; }
+/* ===== CONTAINER ===== */
+.container{
+  padding:18px;
+  max-width:900px;
+  margin:auto;
 }
-</style>
-</head>
 
-<body>
+/* ===== TEXT ===== */
+h2,h3{
+  margin-top:18px;
+}
 
-<header>
-  <h1>VD PHOTO STUDIO</h1>
-  <p>Wedding & Prewedding Packages</p>
-</header>
+ul{
+  padding-left:18px;
+}
 
-<div class="container">
+ul li{
+  margin-bottom:6px;
+}
 
-<!-- WEDDING -->
-<div class="card"><a href="gold.html"><h3>EXCLUSIVE GOLD PACKAGE</h3><div class="tag">Wedding Package</div></a></div>
-<div class="card"><a href="platinum.html"><h3>EXCLUSIVE PLATINUM PACKAGE</h3><div class="tag">Wedding Package</div></a></div>
-<div class="card"><a href="silver.html"><h3>EXCLUSIVE SILVER PACKAGE</h3><div class="tag">Wedding Package</div></a></div>
-<div class="card"><a href="standard.html"><h3>EXCLUSIVE STANDARD PACKAGE</h3><div class="tag">Wedding Package</div></a></div>
-<div class="card"><a href="basic.html"><h3>STANDARD PACKAGE</h3><div class="tag">Wedding Package</div></a></div>
+/* ===== PRICE ===== */
+.price{
+  margin-top:18px;
+  font-size:22px;
+  font-weight:bold;
+  color:#b30000;
+}
 
-<!-- PREWEDDING -->
-<div class="card"><a href="prewed-a.html"><h3>PREWEDDING INDOOR STUDIO PACKAGE A</h3><div class="tag">Prewedding</div></a></div>
-<div class="card"><a href="prewed-b.html"><h3>PREWEDDING INDOOR STUDIO PACKAGE B</h3><div class="tag">Prewedding</div></a></div>
-<div class="card"><a href="prewed-c.html"><h3>PREWEDDING INDOOR STUDIO PACKAGE C</h3><div class="tag">Prewedding</div></a></div>
-<div class="card"><a href="outdoor-a.html"><h3>PREWEDDING OUTDOOR PACKAGE A</h3><div class="tag">Prewedding</div></a></div>
-<div class="card"><a href="outdoor-b.html"><h3>PREWEDDING OUTDOOR PACKAGE B</h3><div class="tag">Prewedding</div></a></div>
-<div class="card"><a href="double.html"><h3>PREWEDDING INDOOR & OUTDOOR PACKAGE DOUBLE</h3><div class="tag">Prewedding</div></a></div>
+/* ===== NOTE ===== */
+.note{
+  font-size:13px;
+  color:#666;
+  margin-top:10px;
+}
 
-</div>
+/* ===== BUTTON ===== */
+.wa{
+  display:block;
+  margin-top:24px;
+  background:#25d366;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:15px;
+  transition:.2s;
+}
 
-</body>
-</html>
+.wa:hover{
+  background:#1ebe5d;
+}
+
+.back{
+  display:block;
+  text-align:center;
+  margin-top:18px;
+  color:#555;
+  text-decoration:none;
+  font-size:14px;
+}
+
+/* ===== GALLERY ===== */
+.gallery-title{
+  margin-top:26px;
+  font-weight:700;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(130px, 1fr));
+  gap:12px;
+  margin-top:10px;
+}
+
+.gallery img{
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  border-radius:10px;
+  cursor:pointer;
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+
+.gallery img:hover{
+  transform:scale(1.04);
+  box-shadow:0 6px 14px rgba(0,0,0,.15);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:480px){
+  header h1, header h2{
+    font-size:22px;
+  }
+  .price{
+    font-size:20px;
+  }
+}
