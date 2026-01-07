@@ -99,35 +99,6 @@ ul li{
   text-align:center;
 }
 
-/* ================= BUTTON ================= */
-.wa{
-  display:block;
-  margin-top:32px;
-  background:#25d366;
-  color:#fff;
-  text-align:center;
-  padding:16px;
-  border-radius:14px;
-  text-decoration:none;
-  font-weight:bold;
-  font-size:16px;
-  transition:.2s ease;
-}
-
-.wa:hover{
-  background:#1ebe5d;
-  transform:translateY(-1px);
-}
-
-.back{
-  display:block;
-  text-align:center;
-  margin-top:18px;
-  color:#666;
-  text-decoration:none;
-  font-size:14px;
-}
-
 /* ================= GALLERY ================= */
 .gallery-title{
   margin-top:36px;
@@ -154,6 +125,40 @@ ul li{
 .gallery img:hover{
   transform:scale(1.05);
   box-shadow:0 8px 16px rgba(0,0,0,.18);
+}
+
+/* ================= BUTTON AREA ================= */
+.button-area{
+  margin-top:48px;
+  padding-top:26px;
+  border-top:1px solid #eee;
+}
+
+.wa{
+  display:block;
+  background:#25d366;
+  color:#fff;
+  text-align:center;
+  padding:16px;
+  border-radius:14px;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:16px;
+  transition:.2s ease;
+}
+
+.wa:hover{
+  background:#1ebe5d;
+  transform:translateY(-1px);
+}
+
+.back{
+  display:block;
+  text-align:center;
+  margin-top:16px;
+  color:#666;
+  text-decoration:none;
+  font-size:14px;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -224,14 +229,6 @@ ul li{
   <b>Belum termasuk transportasi jika lokasi di luar kota</b>
 </div>
 
-<!-- BUTTON -->
-<a class="wa" 
-href="https://wa.me/6282130784822?text=Halo%20VD%20Photo%20Studio,%20saya%20ingin%20booking%20Exclusive%20Standart%20Package">
-📲 Booking via WhatsApp
-</a>
-
-<a class="back" href="index.html">← Kembali ke katalog</a>
-
 <!-- GALLERY -->
 <div class="gallery-title">📸 Contoh Hasil Foto Wedding</div>
 
@@ -241,6 +238,16 @@ href="https://wa.me/6282130784822?text=Halo%20VD%20Photo%20Studio,%20saya%20ingi
   <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=900" onclick="window.open(this.src)">
   <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=900" onclick="window.open(this.src)">
   <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=900" onclick="window.open(this.src)">
+</div>
+
+<!-- BUTTON AREA -->
+<div class="button-area">
+  <a class="wa" 
+  href="https://wa.me/6282130784822?text=Halo%20VD%20Photo%20Studio,%20saya%20ingin%20booking%20Exclusive%20Standart%20Package">
+  📲 Booking via WhatsApp
+  </a>
+
+  <a class="back" href="index.html">← Kembali ke katalog</a>
 </div>
 
 </div>
