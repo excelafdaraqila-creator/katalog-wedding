@@ -3,105 +3,124 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wedding | VD Fotografi</title>
+<title>Wedding</title>
 
 <style>
+/* ===== GLOBAL ===== */
 body{
   margin:0;
   font-family: Arial, Helvetica, sans-serif;
-  background:#f9f9f9;
+  background:#f4f6f8;
   color:#333;
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 header{
-  padding:20px 16px 16px;
+  padding:22px 16px;
   text-align:center;
-  background:#ffffff;
-  border-bottom:1px solid #eee;
+  background:#fff;
+  border-bottom:1px solid #eaeaea;
 }
 
 header h2{
   margin:0;
   font-size:24px;
   font-weight:700;
+  letter-spacing:1px;
 }
 
 .header-line{
   width:60px;
   height:3px;
   background:#a00000;
-  margin:8px auto;
+  margin:10px auto;
   border-radius:2px;
 }
 
 header p{
-  margin:6px 0 0;
+  margin:0;
   color:#666;
   font-size:14px;
 }
 
-/* GRID */
+/* ===== GRID ===== */
 .container{
-  padding:16px;
+  padding:14px;
   display:grid;
   grid-template-columns:repeat(2,1fr);
-  gap:12px;
+  gap:14px;
 }
 
+/* ===== CARD ===== */
 .card{
   background:#fff;
   border-radius:10px;
   overflow:hidden;
   box-shadow:0 4px 10px rgba(0,0,0,0.06);
+  transition:transform .2s ease, box-shadow .2s ease;
 }
 
-.card img{
+.card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 18px rgba(0,0,0,0.1);
+}
+
+.card a{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* ===== IMAGE ===== */
+.img-box{
+  position:relative;
+}
+
+.img-box img{
   width:100%;
   height:200px;
   object-fit:cover;
 }
 
-.card .info{
+.label{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  background:rgba(160,0,0,.85);
+  color:#fff;
+  padding:8px;
+  font-weight:bold;
+  text-align:center;
+  font-size:13px;
+}
+
+/* ===== INFO ===== */
+.info{
   padding:12px;
 }
 
-.card h4{
+.info h4{
   margin:0;
   font-size:15px;
 }
 
-.card p{
+.info p{
+  margin:6px 0 0;
   font-size:13px;
   color:#555;
-  margin:6px 0;
 }
 
-.price{
-  color:#a00000;
-  font-weight:bold;
+/* ===== SMALL NOTE ===== */
+.note{
+  font-size:12px;
+  color:#888;
+  margin-top:4px;
 }
 
-/* WA */
-.wa{
-  display:block;
-  margin-top:8px;
-  padding:10px;
-  background:#25d366;
-  color:#fff;
-  text-align:center;
-  border-radius:8px;
-  font-size:14px;
-  text-decoration:none;
-}
-
-/* BACK */
-.back{
-  display:block;
-  text-align:center;
-  margin:16px;
-  color:#555;
-  text-decoration:none;
+/* ===== RESPONSIVE ===== */
+@media(max-width:360px){
+  .container{
+    grid-template-columns:1fr;
+  }
 }
 </style>
 </head>
@@ -109,68 +128,103 @@ header p{
 <body>
 
 <header>
-  <h2>VD Fotograpi</h2>
+  <h2>WEDDING</h2>
   <div class="header-line"></div>
-  <p>Harga Wedding dan Prewedding </p>
+  <p>Story of Your Happiness</p>
 </header>
 
 <div class="container">
 
-<!-- PREWEDDING -->
+<!-- FAMILY -->
 <div class="card">
-  <img src="https://images.unsplash.com/photo-1520857014576-2c4f4c972b57?q=80&w=1200&auto=format&fit=crop">
-  <div class="info">
-    <h4>Prewedding</h4>
-    <p>Outdoor / Indoor</p>
-    <p class="price">Mulai Rp 1.500.000</p>
-    <a class="wa" href="https://wa.me/6285624718366?text=Halo%20VD%20Studio,%20saya%20ingin%20tanya%20paket%20Prewedding" target="_blank">
-      Tanya via WhatsApp
-    </a>
+<a href="family.html">
+  <div class="img-box">
+    <img src="https://images.unsplash.com/photo-1767697308426-bc492a94642e?q=80&w=1486&auto=format&fit=crop" alt="Family Moment">
+    <div class="label">FAMILY MOMENT</div>
   </div>
+  <div class="info">
+    <h4>Family Moment</h4>
+    <p><b>Mulai Rp 275.000</b></p>
+    <div class="note">Tanpa cetak</div>
+  </div>
+</a>
 </div>
 
-<!-- AKAD -->
+<!-- GROUP -->
 <div class="card">
-  <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop">
-  <div class="info">
-    <h4>Akad Nikah</h4>
-    <p>Dokumentasi momen sakral</p>
-    <p class="price">Mulai Rp 1.000.000</p>
-    <a class="wa" href="https://wa.me/6285624718366?text=Halo%20VD%20Studio,%20saya%20ingin%20tanya%20paket%20Akad%20Nikah" target="_blank">
-      Tanya via WhatsApp
-    </a>
+<a href="group.html">
+  <div class="img-box">
+    <img src="https://images.unsplash.com/photo-1767683157418-365007127e31?q=80&w=1486&auto=format&fit=crop" alt="Foto Group">
+    <div class="label">GROUP</div>
   </div>
+  <div class="info">
+    <h4>Foto Group</h4>
+    <p><b>Mulai Rp 300.000</b></p>
+    <div class="note">Tanpa cetak</div>
+  </div>
+</a>
 </div>
 
-<!-- RESEPSI -->
+<!-- WISUDA -->
 <div class="card">
-  <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1200&auto=format&fit=crop">
-  <div class="info">
-    <h4>Resepsi</h4>
-    <p>Full acara</p>
-    <p class="price">Mulai Rp 1.500.000</p>
-    <a class="wa" href="https://wa.me/6285624718366?text=Halo%20VD%20Studio,%20saya%20ingin%20tanya%20paket%20Resepsi" target="_blank">
-      Tanya via WhatsApp
-    </a>
+<a href="wisuda.html">
+  <div class="img-box">
+    <img src="https://images.unsplash.com/photo-1767703028891-799982af92fe?q=80&w=1486&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <div class="label">GRADUATION</div>
   </div>
+  <div class="info">
+    <h4>Foto Wisuda</h4>
+    <p><b>Rp 30.000 / file</b></p>
+    <div class="note">Tanpa cetak</div>
+  </div>
+</a>
 </div>
 
-<!-- ALL DAY -->
+<!-- SELF FOTO -->
 <div class="card">
-  <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1200&auto=format&fit=crop">
-  <div class="info">
-    <h4>Wedding All Day</h4>
-    <p>Prewedding + Akad + Resepsi</p>
-    <p class="price">Mulai Rp 3.500.000</p>
-    <a class="wa" href="https://wa.me/6285624718366?text=Halo%20VD%20Studio,%20saya%20ingin%20tanya%20paket%20Wedding%20All%20Day" target="_blank">
-      Tanya via WhatsApp
-    </a>
+<a href="self.html">
+  <div class="img-box">
+    <img src="https://images.unsplash.com/photo-1767689895510-70d9ebbb628f?q=80&w=1486&auto=format&fit=crop" alt="Self Foto">
+    <div class="label">SELF FOTO</div>
   </div>
+  <div class="info">
+    <h4>Self Foto</h4>
+    <p><b>Rp 25.000 / orang</b></p>
+    <div class="note">Durasi 15 menit</div>
+  </div>
+</a>
+</div>
+
+<!-- KIDS FOTO -->
+<div class="card">
+<a href="kids.html">
+  <div class="img-box">
+    <img src="https://images.unsplash.com/photo-1767703612330-692c4938a28a?q=80&w=1486&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <div class="label">KIDS FOTO</div>
+  </div>
+  <div class="info">
+    <h4>Kids Foto</h4>
+    <p><b>Rp 175.000</b></p>
+  </div>
+</a>
+</div>
+
+<!-- PAS FOTO -->
+<div class="card">
+<a href="pasfoto.html">
+  <div class="img-box">
+    <img src="https://images.unsplash.com/photo-1767677740170-5ceac29fcfd6?q=80&w=1486&auto=format&fit=crop" alt="Pas Foto">
+    <div class="label">PAS FOTO</div>
+  </div>
+  <div class="info">
+    <h4>Pas Foto</h4>
+    <p><b>Mulai Rp 20.000</b></p>
+  </div>
+</a>
 </div>
 
 </div>
-
-<a class="back" href="index.html">← Kembali ke katalog utama</a>
 
 </body>
 </html>
+
