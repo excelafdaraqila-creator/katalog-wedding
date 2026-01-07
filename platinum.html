@@ -6,143 +6,160 @@
 <title>Exclusive Platinum Package | VD Photo Studio</title>
 
 <style>
+/* ================= GLOBAL ================= */
 body{
   margin:0;
   font-family:"Segoe UI", Arial, sans-serif;
-  background:#f4f6f8;
+  background:#f2f4f7;
   color:#333;
   line-height:1.7;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 header{
-  background:linear-gradient(135deg,#444,#999);
+  background:linear-gradient(135deg,#444,#9e9e9e);
   color:#fff;
   text-align:center;
-  padding:32px 16px;
+  padding:38px 16px;
 }
 
 header h1{
   margin:0;
-  font-size:26px;
+  font-size:28px;
   letter-spacing:1px;
 }
 
 header p{
-  margin-top:6px;
+  margin-top:8px;
   font-size:14px;
   opacity:.9;
 }
 
-/* CONTAINER */
+/* ================= CONTAINER ================= */
 .container{
-  max-width:950px;
-  margin:auto;
-  padding:20px;
+  max-width:980px;
+  margin:30px auto;
+  padding:24px;
   background:#fff;
+  border-radius:14px;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
 }
 
-/* SECTION */
+/* ================= SECTION ================= */
 .section{
-  margin-bottom:22px;
+  margin-bottom:26px;
 }
 
-.section h2{
-  margin-bottom:10px;
-  color:#555;
+.section-title{
   font-size:18px;
+  font-weight:700;
+  color:#444;
+  margin-bottom:12px;
+  border-left:4px solid #777;
+  padding-left:10px;
 }
 
 ul{
-  padding-left:18px;
+  padding-left:20px;
 }
 
 ul li{
-  margin-bottom:6px;
+  margin-bottom:8px;
 }
 
-/* NOTE */
+/* ================= NOTE ================= */
 .note{
   font-size:14px;
   color:#555;
 }
 
-/* PRICE */
-.price{
-  margin-top:20px;
-  font-size:24px;
-  font-weight:bold;
-  color:#b30000;
+/* ================= PRICE ================= */
+.price-box{
   text-align:center;
+  margin-top:28px;
 }
 
-/* WARNING */
+.price{
+  font-size:28px;
+  font-weight:800;
+  color:#b30000;
+}
+
+.price-sub{
+  font-size:14px;
+  color:#555;
+  margin-top:6px;
+}
+
+/* ================= WARNING ================= */
 .warning{
-  margin-top:10px;
+  margin-top:12px;
   font-size:14px;
   color:#444;
   text-align:center;
 }
 
-/* BUTTON */
+/* ================= BUTTON ================= */
 .wa{
   display:block;
-  margin-top:26px;
+  margin-top:30px;
   background:#25d366;
   color:#fff;
   text-align:center;
-  padding:15px;
-  border-radius:12px;
+  padding:16px;
+  border-radius:14px;
   text-decoration:none;
   font-weight:bold;
-  font-size:15px;
+  font-size:16px;
+  transition:.2s ease;
 }
 
 .wa:hover{
   background:#1ebe5d;
+  transform:translateY(-1px);
 }
 
 .back{
   display:block;
   text-align:center;
   margin-top:18px;
-  color:#555;
+  color:#666;
   text-decoration:none;
   font-size:14px;
 }
 
-/* GALLERY */
+/* ================= GALLERY ================= */
 .gallery-title{
-  margin-top:30px;
+  margin-top:34px;
   font-size:18px;
-  font-weight:bold;
+  font-weight:700;
 }
 
 .gallery{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
-  gap:12px;
-  margin-top:12px;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:14px;
+  margin-top:14px;
 }
 
 .gallery img{
   width:100%;
-  height:160px;
+  height:170px;
   object-fit:cover;
-  border-radius:10px;
+  border-radius:12px;
   cursor:pointer;
-  transition:.2s;
+  transition:.25s ease;
 }
 
 .gallery img:hover{
   transform:scale(1.05);
-  box-shadow:0 6px 14px rgba(0,0,0,.15);
+  box-shadow:0 8px 16px rgba(0,0,0,.18);
 }
 
-/* RESPONSIVE */
+/* ================= RESPONSIVE ================= */
 @media(max-width:480px){
   header h1{font-size:22px;}
-  .price{font-size:20px;}
+  .price{font-size:22px;}
 }
 </style>
 </head>
@@ -151,13 +168,14 @@ ul li{
 
 <header>
   <h1>EXCLUSIVE PLATINUM PACKAGE</h1>
-  <p>Wedding Package – VD Photo Studio</p>
+  <p>Wedding Photography Package – VD Photo Studio</p>
 </header>
 
 <div class="container">
 
 <!-- PERSONIL -->
 <div class="section">
+  <div class="section-title">Personil</div>
   <ul>
     <li><b>1 Fotografer</b></li>
     <li><b>1 Assistant Fotografer</b></li>
@@ -166,7 +184,7 @@ ul li{
 
 <!-- INCLUDE -->
 <div class="section">
-  <h2>Include</h2>
+  <div class="section-title">Include</div>
   <ul>
     <li>1 Album hardcover untuk pengantin</li>
     <li>Box exclusive magazine</li>
@@ -189,31 +207,21 @@ ul li{
   </p>
 
   <p>
-    <b>DP 50%</b> untuk tanda jadi.  
-    Pelunasan setelah foto selesai.
+    <b>DP 50%</b> sebagai tanda jadi.  
+    Pelunasan dilakukan setelah proses pemotretan selesai.
   </p>
 </div>
 
 <!-- PRICE -->
-<div class="price">
-  Rp 4.000.000
+<div class="price-box">
+  <div class="price">Rp 4.000.000</div>
+  <div class="price-sub">Harga paket Wedding Platinum</div>
 </div>
 
 <div class="warning">
-  Apabila ada penambahan hari dikenakan biaya  
+  Apabila terdapat penambahan hari akan dikenakan biaya  
   <b>Rp 1.000.000 / hari</b><br>
-  <b>Belum termasuk transportasi jika di luar kota</b>
-</div>
-
-<!-- GALLERY -->
-<div class="gallery-title">📸 Sample Foto Wedding</div>
-
-<div class="gallery">
-  <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=600" onclick="window.open(this.src)">
-  <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=600" onclick="window.open(this.src)">
-  <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?q=80&w=600" onclick="window.open(this.src)">
-  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600" onclick="window.open(this.src)">
-  <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=600" onclick="window.open(this.src)">
+  <b>Belum termasuk biaya transportasi jika di luar kota</b>
 </div>
 
 <!-- BUTTON -->
@@ -223,6 +231,17 @@ href="https://wa.me/6282130784822?text=Halo%20VD%20Photo%20Studio,%20saya%20ingi
 </a>
 
 <a class="back" href="index.html">← Kembali ke katalog</a>
+
+<!-- GALLERY -->
+<div class="gallery-title">📸 Contoh Hasil Foto Wedding</div>
+
+<div class="gallery">
+  <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=900" onclick="window.open(this.src)">
+  <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=900" onclick="window.open(this.src)">
+  <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?q=80&w=900" onclick="window.open(this.src)">
+  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=900" onclick="window.open(this.src)">
+  <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=900" onclick="window.open(this.src)">
+</div>
 
 </div>
 
