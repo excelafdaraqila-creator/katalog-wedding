@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wedding Catalog | VD Photo Studio</title>
+
+<style>
 /* ===== GLOBAL ===== */
 *{
   box-sizing:border-box;
@@ -16,15 +24,13 @@ header{
   background:linear-gradient(135deg,#7b0000,#c40000);
   color:#fff;
   text-align:center;
-  padding:28px 16px;
+  padding:30px 16px;
 }
 
-header h1,
-header h2{
+header h1{
   margin:0;
-  font-size:26px;
+  font-size:28px;
   letter-spacing:1px;
-  font-weight:700;
 }
 
 header p{
@@ -33,115 +39,128 @@ header p{
   opacity:0.9;
 }
 
-/* ===== CONTAINER ===== */
+/* ===== GRID ===== */
 .container{
   padding:18px;
-  max-width:900px;
-  margin:0 auto;
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:16px;
 }
 
-/* ===== TEXT ===== */
-h2, h3{
-  margin-top:18px;
-  margin-bottom:8px;
+/* ===== CARD ===== */
+.card{
+  background:#fff;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 6px 14px rgba(0,0,0,.08);
+  transition:.2s ease;
 }
 
-p{
-  margin:8px 0;
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 22px rgba(0,0,0,.12);
 }
 
-ul{
-  padding-left:18px;
-  margin:10px 0;
+.card a{
+  text-decoration:none;
+  color:inherit;
 }
 
-ul li{
-  margin-bottom:6px;
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
 }
 
-/* ===== PRICE ===== */
-.price{
-  margin-top:18px;
-  font-size:22px;
-  font-weight:bold;
-  color:#b30000;
+.card .info{
+  padding:14px;
 }
 
-/* ===== NOTE ===== */
-.note{
+.card h3{
+  margin:0;
+  font-size:15px;
+}
+
+.card p{
+  margin:6px 0 0;
   font-size:13px;
   color:#666;
-  margin-top:10px;
 }
+</style>
 
-/* ===== BUTTON ===== */
-.wa{
-  display:block;
-  margin-top:24px;
-  background:#25d366;
-  color:#fff;
-  text-align:center;
-  padding:15px;
-  border-radius:12px;
-  text-decoration:none;
-  font-weight:bold;
-  font-size:15px;
-  transition:background .2s ease, transform .2s ease;
-}
+</head>
+<body>
 
-.wa:hover{
-  background:#1ebe5d;
-  transform:translateY(-1px);
-}
+<header>
+  <h1>VD PHOTO STUDIO</h1>
+  <p>Wedding & Prewedding Catalog</p>
+</header>
 
-.back{
-  display:block;
-  text-align:center;
-  margin-top:18px;
-  color:#555;
-  text-decoration:none;
-  font-size:14px;
-}
+<div class="container">
 
-.back:hover{
-  text-decoration:underline;
-}
+<div class="card">
+<a href="gold.html">
+  <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200">
+  <div class="info">
+    <h3>Exclusive Gold Package</h3>
+    <p>Lihat detail paket</p>
+  </div>
+</a>
+</div>
 
-/* ===== GALLERY ===== */
-.gallery-title{
-  margin-top:26px;
-  font-weight:700;
-}
+<div class="card">
+<a href="platinum.html">
+  <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1200">
+  <div class="info">
+    <h3>Exclusive Platinum Package</h3>
+    <p>Lihat detail paket</p>
+  </div>
+</a>
+</div>
 
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(130px, 1fr));
-  gap:12px;
-  margin-top:10px;
-}
+<div class="card">
+<a href="silver.html">
+  <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1200">
+  <div class="info">
+    <h3>Exclusive Silver Package</h3>
+    <p>Lihat detail paket</p>
+  </div>
+</a>
+</div>
 
-.gallery img{
-  width:100%;
-  height:150px;
-  object-fit:cover;
-  border-radius:10px;
-  cursor:pointer;
-  transition:transform .2s ease, box-shadow .2s ease;
-}
+<div class="card">
+<a href="standard.html">
+  <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?q=80&w=1200">
+  <div class="info">
+    <h3>Exclusive Standard Package</h3>
+    <p>Lihat detail paket</p>
+  </div>
+</a>
+</div>
 
-.gallery img:hover{
-  transform:scale(1.04);
-  box-shadow:0 6px 14px rgba(0,0,0,.15);
-}
+<div class="card">
+<a href="basic.html">
+  <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1200">
+  <div class="info">
+    <h3>Standard Package</h3>
+    <p>Lihat detail paket</p>
+  </div>
+</a>
+</div>
 
-/* ===== RESPONSIVE ===== */
-@media(max-width:480px){
-  header h1,
-  header h2{
-    font-size:22px;
-  }
+<div class="card">
+<a href="prewed-a.html">
+  <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?q=80&w=1200">
+  <div class="info">
+    <h3>Prewedding Indoor A</h3>
+    <p>Lihat detail paket</p>
+  </div>
+</a>
+</div>
 
-  .price{
-    font-size:20px;
-  }
-}
+</div>
+
+</body>
+</html>
