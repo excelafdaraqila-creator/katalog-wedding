@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wedding</title>
+<title>Wedding & Prewedding | VD Fotografi</title>
 
 <style>
-/* ===== GLOBAL ===== */
 body{
   margin:0;
   font-family: Arial, Helvetica, sans-serif;
@@ -14,113 +13,71 @@ body{
   color:#333;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 header{
-  padding:22px 16px;
+  padding:26px 16px;
   text-align:center;
-  background:#fff;
-  border-bottom:1px solid #eaeaea;
+  background:linear-gradient(135deg,#8b0000,#c40000);
+  color:#fff;
 }
 
-header h2{
+header h1{
   margin:0;
-  font-size:24px;
-  font-weight:700;
+  font-size:28px;
   letter-spacing:1px;
 }
 
-.header-line{
-  width:60px;
-  height:3px;
-  background:#a00000;
-  margin:10px auto;
-  border-radius:2px;
-}
-
 header p{
-  margin:0;
-  color:#666;
+  margin:6px 0 0;
   font-size:14px;
+  opacity:.9;
 }
 
-/* ===== GRID ===== */
+/* GRID */
 .container{
-  padding:14px;
+  padding:16px;
   display:grid;
   grid-template-columns:repeat(2,1fr);
   gap:14px;
 }
 
-/* ===== CARD ===== */
+/* CARD */
 .card{
   background:#fff;
-  border-radius:10px;
+  border-radius:12px;
   overflow:hidden;
-  box-shadow:0 4px 10px rgba(0,0,0,0.06);
-  transition:transform .2s ease, box-shadow .2s ease;
+  box-shadow:0 6px 14px rgba(0,0,0,.08);
+  transition:.25s;
 }
 
 .card:hover{
   transform:translateY(-3px);
-  box-shadow:0 8px 18px rgba(0,0,0,0.1);
+  box-shadow:0 10px 22px rgba(0,0,0,.12);
 }
 
 .card a{
   text-decoration:none;
   color:inherit;
+  display:block;
+  padding:16px;
 }
 
-/* ===== IMAGE ===== */
-.img-box{
-  position:relative;
-}
-
-.img-box img{
-  width:100%;
-  height:200px;
-  object-fit:cover;
-}
-
-.label{
-  position:absolute;
-  bottom:0;
-  width:100%;
-  background:rgba(160,0,0,.85);
-  color:#fff;
-  padding:8px;
-  font-weight:bold;
-  text-align:center;
-  font-size:13px;
-}
-
-/* ===== INFO ===== */
-.info{
-  padding:12px;
-}
-
-.info h4{
+.card h3{
   margin:0;
-  font-size:15px;
+  font-size:14px;
+  font-weight:700;
+  line-height:1.4;
 }
 
-.info p{
-  margin:6px 0 0;
-  font-size:13px;
-  color:#555;
-}
-
-/* ===== SMALL NOTE ===== */
-.note{
+.tag{
+  margin-top:6px;
   font-size:12px;
   color:#888;
-  margin-top:4px;
 }
 
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE */
 @media(max-width:360px){
-  .container{
-    grid-template-columns:1fr;
-  }
+  .container{ grid-template-columns:1fr; }
 }
 </style>
 </head>
@@ -128,162 +85,28 @@ header p{
 <body>
 
 <header>
-  <h2>VD FOTOGRAFI</h2>
-  <div class="header-line"></div>
-  <p>Catalog Wedding & Prewedding</p>
+  <h1>VD PHOTO STUDIO</h1>
+  <p>Wedding & Prewedding Packages</p>
 </header>
 
 <div class="container">
 
-<!-- EXLUSIVE GOLD PACKAGE -->
-<div class="card">
-<a href="family.html">
-  <div class="img-box">
-    <img src="https://images.unsplash.com/photo-1767697308426-bc492a94642e?q=80&w=1486&auto=format&fit=crop" alt="Family Moment">
-    <div class="label">EXLUSIVE GOLD PACKAGE</div>
-  </div>
-  <div class="info">
-    <h4>EXLUSIVE GOLD PACKAGE</h4>
-    <p><b> Rp 6.000.000/DP 50%</b></p>
-    <div class="note">VD</div>
-  </div>
-</a>
+<!-- WEDDING -->
+<div class="card"><a href="gold.html"><h3>EXCLUSIVE GOLD PACKAGE</h3><div class="tag">Wedding Package</div></a></div>
+<div class="card"><a href="platinum.html"><h3>EXCLUSIVE PLATINUM PACKAGE</h3><div class="tag">Wedding Package</div></a></div>
+<div class="card"><a href="silver.html"><h3>EXCLUSIVE SILVER PACKAGE</h3><div class="tag">Wedding Package</div></a></div>
+<div class="card"><a href="standard.html"><h3>EXCLUSIVE STANDARD PACKAGE</h3><div class="tag">Wedding Package</div></a></div>
+<div class="card"><a href="basic.html"><h3>STANDARD PACKAGE</h3><div class="tag">Wedding Package</div></a></div>
+
+<!-- PREWEDDING -->
+<div class="card"><a href="prewed-a.html"><h3>PREWEDDING INDOOR STUDIO PACKAGE A</h3><div class="tag">Prewedding</div></a></div>
+<div class="card"><a href="prewed-b.html"><h3>PREWEDDING INDOOR STUDIO PACKAGE B</h3><div class="tag">Prewedding</div></a></div>
+<div class="card"><a href="prewed-c.html"><h3>PREWEDDING INDOOR STUDIO PACKAGE C</h3><div class="tag">Prewedding</div></a></div>
+<div class="card"><a href="outdoor-a.html"><h3>PREWEDDING OUTDOOR PACKAGE A</h3><div class="tag">Prewedding</div></a></div>
+<div class="card"><a href="outdoor-b.html"><h3>PREWEDDING OUTDOOR PACKAGE B</h3><div class="tag">Prewedding</div></a></div>
+<div class="card"><a href="double.html"><h3>PREWEDDING INDOOR & OUTDOOR PACKAGE DOUBLE</h3><div class="tag">Prewedding</div></a></div>
+
 </div>
 
-<!-- EXLUSIVE PLATINUM PACKAGE -->
-<div class="card">
-<a href="group.html">
-  <div class="img-box">
-    <img src="https://images.unsplash.com/photo-1767683157418-365007127e31?q=80&w=1486&auto=format&fit=crop" alt="Foto Group">
-    <div class="label">EXLUSIVE PLATINUM PACKAGE</div>
-  </div>
-  <div class="info">
-    <h4>EXLUSIVE PLATINUM PACKAGE</h4>
-    <p><b> Rp 4000.000/DP 50%</b></p>
-    <div class="note">VD</div>
-  </div>
-</a>
-</div>
-
-<!-- EXLUSIVE SILVER PACKAGE -->
-<div class="card">
-<a href="EXLUSIVE SILVER PACKAGE.html">
-  <div class="img-box">
-    <img src="https://images.unsplash.com/photo-1767703028891-799982af92fe?q=80&w=1486&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-    <div class="label">EXLUSIVE SILVER PACKAGE</div>
-  </div>
-  <div class="info">
-    <h4>EXLUSIVE SILVER PACKAGE</h4>
-    <p><b>Rp 3.500.000 / DP 50%</b></p>
-    <div class="note">VD</div>
-  </div>
-</a>
-</div>
-
-<!-- EXLUSIVE STANDART PACKAGE -->
-<div class="card">
-<a href="self.html">
-  <div class="img-box">
-    <img src="https://images.unsplash.com/photo-1767689895510-70d9ebbb628f?q=80&w=1486&auto=format&fit=crop" alt="Self Foto">
-    <div class="label">EXLUSIVE STANDART PACKAGE</div>
-  </div>
-  <div class="info">
-    <h4>EXLUSIVE STANDART PACKAGE</h4>
-    <p><b>Rp 3000.000 / DP 50%</b></p>
-    <div class="note">VD</div>
-  </div>
-</a>
-</div>
-
-<!-- STANDAR PACKAGE -->
-<div class="card">
-<a href="kids.html">
-  <div class="img-box">
-    <img src="https://images.unsplash.com/photo-1767703612330-692c4938a28a?q=80&w=1486&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-    <div class="label">STANDAR PACKAGE</div>
-  </div>
-  <div class="info">
-    <h4>STANDAR PACKAGE</h4>
-    <p><b>Rp 2.000.000/DP 50%</b></p>
-  </div>
-</a>
-</div>
-
-<!-- PREWEDDING INDOOR STUDIO PACKAGE A -->
-<div class="card">
-<a href="pasfoto.html">
-  <div class="img-box">
-    <img src="https://images.unsplash.com/photo-1767677740170-5ceac29fcfd6?q=80&w=1486&auto=format&fit=crop" alt="Pas Foto">
-    <div class="label">PREWEDDING INDOOR STUDIO PACKAGE A</div>
-  </div>
-  <div class="info">
-    <h4>PREWEDDING INDOOR STUDIO PACKAGE A</h4>
-    <p><b> Rp 1.500.000</b></p>
-  </div>
-</a>
-</div>
-<!-- PREWEDDING INDOOR STUDIO PACKAGE B -->
-<div class="card">
-<a href="pasfoto.html">
-  <div class="img-box">
-    <img src="https://images.unsplash.com/photo-1767677740170-5ceac29fcfd6?q=80&w=1486&auto=format&fit=crop" alt="Pas Foto">
-    <div class="label">PREWEDDING INDOOR STUDIO PACKAGE B</div>
-  </div>
-  <div class="info">
-    <h4>PREWEDDING INDOOR STUDIO PACKAGE B</h4>
-    <p><b> Rp 2.000.000</b></p>
-</div>
-</a>
-</div>
-  <!-- PREWEDDING INDOOR STUDIO PACKAGE C -->
-<div class="card">
-<a href="pasfoto.html">
-  <div class="img-box">
-    <img src="https://images.unsplash.com/photo-1767677740170-5ceac29fcfd6?q=80&w=1486&auto=format&fit=crop" alt="Pas Foto">
-    <div class="label">PREWEDDING INDOOR STUDIO PACKAGE C</div>
-  </div>
-  <div class="info">
-    <h4>PREWEDDING INDOOR STUDIO PACKAGE C</h4>
-    <p><b> Rp 3.000.000</b></p>
-    </div>
-</a>
-</div>
-  <!-- PREWEDDING OUTDOOR PACKAGE A -->
-<div class="card">
-<a href="pasfoto.html">
-  <div class="img-box">
-    <img src="https://images.unsplash.com/photo-1767677740170-5ceac29fcfd6?q=80&w=1486&auto=format&fit=crop" alt="Pas Foto">
-    <div class="label">PREWEDDING OUTDOOR PACKAGE A</div>
-  </div>
-  <div class="info">
-    <h4>PREWEDDING OUTDOOR PACKAGE A</h4>
-    <p><b> Rp 2.000.000</b></p>
-     </div>
-</a>
-</div>
-  <!-- PREWEDDING OUTDOOR PACKAGE B -->
-<div class="card">
-<a href="pasfoto.html">
-  <div class="img-box">
-    <img src="https://images.unsplash.com/photo-1767677740170-5ceac29fcfd6?q=80&w=1486&auto=format&fit=crop" alt="Pas Foto">
-    <div class="label">PREWEDDING OUTDOOR PACKAGE B</div>
-  </div>
-  <div class="info">
-    <h4>PREWEDDING OUTDOOR PACKAGE B</h4>
-    <p><b> Rp 3.000.000</b></p>
-    </div>
-</a>
-</div>
-  <!-- PREWEDDING INDOOR & OUTDOOR PACKAGE DOUBLE -->
-<div class="card">
-<a href="pasfoto.html">
-  <div class="img-box">
-    <img src="https://images.unsplash.com/photo-1767677740170-5ceac29fcfd6?q=80&w=1486&auto=format&fit=crop" alt="Pas Foto">
-    <div class="label">PREWEDDING INDOOR & OUTDOOR PACKAGE DOUBLE</div>
-  </div>
-  <div class="info">
-    <h4>PREWEDDING INDOOR & OUTDOOR PACKAGE DOUBLE</h4>
-    <p><b> Rp 3.500.000</b></p>
 </body>
 </html>
-
