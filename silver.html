@@ -6,126 +6,146 @@
 <title>Exclusive Silver Package | VD Photo Studio</title>
 
 <style>
-/* ===== GLOBAL ===== */
+/* ================= GLOBAL ================= */
 body{
   margin:0;
-  font-family:"Segoe UI", Arial, Helvetica, sans-serif;
-  background:#f4f6f8;
+  font-family:"Segoe UI", Arial, sans-serif;
+  background:#f2f4f7;
   color:#333;
-  line-height:1.6;
+  line-height:1.7;
 }
 
-/* ===== HEADER ===== */
+/* ================= HEADER ================= */
 header{
-  background:linear-gradient(135deg,#7b0000,#c40000);
+  background:linear-gradient(135deg,#6e6e6e,#a8a8a8);
   color:#fff;
   text-align:center;
-  padding:30px 16px;
+  padding:38px 16px;
 }
 
 header h1{
   margin:0;
-  font-size:26px;
+  font-size:28px;
   letter-spacing:1px;
 }
 
 header p{
-  margin-top:6px;
+  margin-top:8px;
   font-size:14px;
-  opacity:0.9;
+  opacity:.9;
 }
 
-/* ===== CONTAINER ===== */
+/* ================= CONTAINER ================= */
 .container{
-  padding:18px;
-  max-width:900px;
-  margin:auto;
+  max-width:980px;
+  margin:30px auto;
+  padding:24px;
+  background:#fff;
+  border-radius:14px;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
 }
 
-/* ===== TEXT ===== */
-h2, h3{
-  margin-top:18px;
+/* ================= SECTION ================= */
+.section{
+  margin-bottom:26px;
+}
+
+.section-title{
+  font-size:18px;
+  font-weight:700;
+  color:#444;
+  margin-bottom:12px;
+  border-left:4px solid #9e9e9e;
+  padding-left:10px;
 }
 
 ul{
-  padding-left:18px;
+  padding-left:20px;
 }
 
 ul li{
-  margin-bottom:6px;
+  margin-bottom:8px;
 }
 
-/* ===== PRICE ===== */
+/* ================= PRICE ================= */
+.price-box{
+  text-align:center;
+  margin-top:28px;
+}
+
 .price{
-  margin-top:18px;
-  font-size:22px;
-  font-weight:bold;
+  font-size:28px;
+  font-weight:800;
   color:#b30000;
 }
 
-/* ===== BUTTON ===== */
+.price-sub{
+  font-size:14px;
+  color:#555;
+  margin-top:6px;
+}
+
+/* ================= BUTTON ================= */
 .wa{
   display:block;
-  margin-top:24px;
+  margin-top:30px;
   background:#25d366;
   color:#fff;
   text-align:center;
-  padding:15px;
-  border-radius:12px;
+  padding:16px;
+  border-radius:14px;
   text-decoration:none;
   font-weight:bold;
-  font-size:15px;
-  transition:.2s;
+  font-size:16px;
+  transition:.2s ease;
 }
 
 .wa:hover{
   background:#1ebe5d;
+  transform:translateY(-1px);
 }
 
 .back{
   display:block;
   text-align:center;
   margin-top:18px;
-  color:#555;
+  color:#666;
   text-decoration:none;
   font-size:14px;
 }
 
-/* ===== GALLERY ===== */
+/* ================= GALLERY ================= */
 .gallery-title{
-  margin-top:28px;
+  margin-top:34px;
+  font-size:18px;
   font-weight:700;
 }
 
 .gallery{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));
-  gap:12px;
-  margin-top:12px;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:14px;
+  margin-top:14px;
 }
 
 .gallery img{
   width:100%;
-  height:150px;
+  height:170px;
   object-fit:cover;
-  border-radius:10px;
+  border-radius:12px;
   cursor:pointer;
-  transition:transform .2s ease, box-shadow .2s ease;
+  transition:.25s ease;
 }
 
 .gallery img:hover{
   transform:scale(1.05);
-  box-shadow:0 6px 14px rgba(0,0,0,.15);
+  box-shadow:0 8px 16px rgba(0,0,0,.18);
 }
 
-/* ===== RESPONSIVE ===== */
+/* ================= RESPONSIVE ================= */
 @media(max-width:480px){
-  header h1{
-    font-size:22px;
-  }
-  .price{
-    font-size:20px;
-  }
+  header h1{font-size:22px;}
+  .price{font-size:22px;}
 }
 </style>
 </head>
@@ -133,24 +153,31 @@ ul li{
 <body>
 
 <header>
-  <h1>Exclusive Silver Package</h1>
-  <p>Wedding Package </p>
+  <h1>EXCLUSIVE SILVER PACKAGE</h1>
+  <p>Wedding Photography Package – VD Photo Studio</p>
 </header>
 
 <div class="container">
 
-<h2>Detail Paket</h2>
+<!-- DETAIL -->
+<div class="section">
+  <div class="section-title">Detail Paket</div>
+  <ul>
+    <li>1 Fotografer + 1 Assistant</li>
+    <li>Album hardcover / magazine</li>
+    <li>Album magnetic</li>
+    <li>2x cetak ukuran 16R</li>
+    <li>1x cetak ukuran 12R</li>
+  </ul>
+</div>
 
-<ul>
-  <li>1 Fotografer + 1 Assistant</li>
-  <li>Album hardcover / magazine</li>
-  <li>Album magnetic</li>
-  <li>2x cetak ukuran 16R</li>
-  <li>1x cetak ukuran 12R</li>
-</ul>
+<!-- PRICE -->
+<div class="price-box">
+  <div class="price">Rp 3.500.000</div>
+  <div class="price-sub">Harga paket Exclusive Silver Wedding</div>
+</div>
 
-<p class="price">Rp 3.500.000</p>
-
+<!-- BUTTON -->
 <a class="wa" 
 href="https://wa.me/6282130784822?text=Halo%20VD%20Photo%20Studio,%20saya%20ingin%20booking%20Exclusive%20Silver%20Package">
 📲 Booking via WhatsApp
@@ -158,14 +185,15 @@ href="https://wa.me/6282130784822?text=Halo%20VD%20Photo%20Studio,%20saya%20ingi
 
 <a class="back" href="index.html">← Kembali ke katalog</a>
 
-<!-- ===== SAMPLE FOTO ===== -->
-<h3 class="gallery-title">Sample Foto Wedding</h3>
+<!-- GALLERY -->
+<div class="gallery-title">📸 Contoh Hasil Foto Wedding</div>
 
 <div class="gallery">
-  <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop">
-  <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?q=80&w=800&auto=format&fit=crop">
-  <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=800&auto=format&fit=crop">
-  <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=800&auto=format&fit=crop">
+  <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=900" onclick="window.open(this.src)">
+  <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?q=80&w=900" onclick="window.open(this.src)">
+  <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=900" onclick="window.open(this.src)">
+  <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=900" onclick="window.open(this.src)">
+  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=900" onclick="window.open(this.src)">
 </div>
 
 </div>
